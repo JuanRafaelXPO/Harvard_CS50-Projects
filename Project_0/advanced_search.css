@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: #f1f1f1;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+
+#logo, #home {
+    width: 50%;
+}
+
+#logo {
+    padding: 10px 0;
+    text-align: left;
+    float: left;
+}
+
+#home {
+    text-align: right;
+    float: right;
+}
+
+#logo img {
+    width: 150px;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+#home ul li a {
+    color: #222;
+    text-decoration: none;
+}
+
+#home ul li a:hover {text-decoration: underline;}
+
+#container {
+    max-width: 1280px;
+}
+
+#tittle {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#tittle > h1 {
+    margin: 25px 35px;
+    color: #d93025;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#container-search {
+    padding: 35px;
+}
+
+.inputs {
+    margin: 3px 0;
+}
+
+#input-spans > .label {
+    font-size: 16px;
+}
+
+#input-spans > .input-text > input[type=text] {
+    display: none;
+}
+
+#input-spans > .exemple {
+    padding: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.label, .input-text, .exemple {
+    float: left;
+}
+
+.align-label {
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.label {
+    width: 18%;
+    max-width: 180px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.input-text {
+    width: 51%;
+    height: 35px;
+}
+
+.input-text input {
+    padding: 10px 7px;
+    width: 100%;
+    height: 29px;
+    margin-bottom: 5px;
+}
+
+.input-text input:focus {
+    outline: none;
+    border: 1px solid #3985ff;
+}
+
+.exemple {
+    padding: 0 10px;
+    width: 31%;
+    color: #555;
+    font-size: 11px;
+    font-family: monospace;
+}
+
+.inputs > .input-button > input[type=submit] {
+    margin: 10px 0;
+    padding: 5px;
+    max-width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    background: #4d90fe;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    float: right;
+}
+
+.inputs > .input-button > input[type=submit]:hover {
+    background: linear-gradient(#4d90fe,#357ae8);
+}
+
+#border-bottom {
+    margin: 35px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+footer {
+    background: #f2f2f2;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+}
+
+#up{
+    padding: 15px 30px;
+}
+
+#up span {
+    color: #70757a;
+    font-size: 15px;
+}
+
+#down {
+    display: flex;
+    border-top: 1px solid rgb(220, 220, 220);    
+}
+
+#helper {
+    padding: 15px;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+#helper a {
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+#helper a:hover {text-decoration: underline;}
+
+
+@media (max-width: 1024px) {
+    .exemple {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    
+
+    #container-search {
+        padding: 15px 15px;
+    }
+
+    #tittle > h1 {
+        margin: 15px 20px;
+        width: 50%;
+    }
+
+    #input-spans > .label {
+        font-weight: bold;
+        max-width: 190px;
+    }
+
+    #input-spans > .input-text {
+        display: none;
+    }
+    
+    .exemple {
+        display: none;
+    }
+
+    .inputs > .label {
+        width: 100%;
+    }
+
+    .inputs > .input-text {
+        width: 100%;
+    }
+
+    .inputs > .input-button {
+        text-align: center;
+    }
+
+    .inputs > .input-button > input[type=submit] {
+        margin: auto;
+        float: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    @media (max-height: 768px) {
+        #container {
+            margin-bottom: 10vh;
+        }
+
+        footer {
+            position: relative;
+        }
+    }
+}
+
+@media (max-height:500px) {
+    footer {
+        position: relative;
+    }
+}

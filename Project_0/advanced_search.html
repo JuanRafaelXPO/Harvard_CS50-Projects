@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa avançada</title>
+
+    <link rel="stylesheet" href="./advanced_search.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./Assets/Harvard.png" alt="">
+        </div>
+
+        <div id="home">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Pesquisa Google</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="tittle">
+                <h1>Pesquisa avançada</h1>
+            </div>
+
+            <div id="container-search">
+
+                <div id="input-spans" class="inputs">
+                    <div class="label">
+                        <label>Localizar páginas com...</label>
+                    </div>
+
+                    <div class="input-text">
+                        <input type="text">
+                    </div>
+
+                    <div class="exemple span-exemple">
+                        <div class="align-label">
+                            <span>Fazer isso na caixa de pesquisa.</span>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+
+                <form action="https://google.com/search">
+
+                    <div class="inputs">
+                        <div class="label">
+                            <div class="align-label">
+                                <label>todas espas palavras:</label>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="input-text">
+                            <input type="text" name="as_q">
+                        </div>
+    
+                        <div class="exemple">
+                            <div class="align-label">
+                                <span>Digite as palavras imputantes: rat terrier tricolor</span>
+                            </div> 
+                        </div>
+    
+                        <div class="clear"></div>
+                    </div>
+    
+                    <div class="inputs">
+                        <div class="label">
+                            <div class="align-label">
+                                <label>esta espressão ou frase exata:</label>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="input-text">
+                            <input type="text" name="as_epq">
+                        </div>
+    
+                        <div class="exemple">
+                            <div class="align-label">
+                                <span>Coloque palavras exatas entre aspas: "rat terrier"</span>
+                            </div> 
+                        </div>
+    
+                        <div class="clear"></div>
+                    </div>
+    
+                    <div class="inputs">
+                        <div class="label">
+                            <div class="align-label">
+                                <label>qualquer uma destas palavras:</label>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="input-text">
+                            <input type="text" name="as_oq">
+                        </div>
+    
+                        <div class="exemple">
+                            <div class="align-label">
+                                <span>Digite OR entre todas as palavras que você procura: miniatura OR padrão</span>
+                            </div> 
+                        </div>
+    
+                        <div class="clear"></div>
+                    </div>
+    
+                    <div class="inputs">
+                        <div class="label">
+                            <div class="align-label">
+                                <label>nenhuma destas palavras:</label>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="input-text">
+                            <input type="text" name="as_eq">
+                        </div>
+    
+                        <div class="exemple">
+                            <div class="align-label">
+                                <span>Coloque um sinal de menos antes das palavras que você não quer: -roedor, "Jack Russell"</span>
+                            </div> 
+                        </div>
+    
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="inputs">
+                        <div class="label">
+                            <div class="align-label">
+                                <label></label>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="input-text input-button">
+                            <input type="submit" value="Pesquisa avançada">
+                            
+                        </div>
+                        
+                        <div class="exemple">
+                            <div class="align-label">
+                                <span></span>
+                            </div> 
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </div>
+
+                    <div id="hiddens">
+                        <input type="hidden" name="as_nlo">
+                        <input type="hidden" name="as_nhi">
+                        <input type="hidden" name="lr">
+                        <input type="hidden" name="cr">
+                        <input type="hidden" name="as_qdr" value="all">
+                        <input type="hidden" name="as_sitesearch">
+                        <input type="hidden" name="as_occt">
+                        <input type="hidden" name="safe">
+                        <input type="hidden" name="as_filetype">
+                        <input type="hidden" name="sur">
+                    </div>
+                </form>
+                
+                
+                <div id="border-bottom"></div>
+            </div><!-- container-search -->
+
+
+        </div><!-- container -->
+    </main>
+
+    <footer>
+        <div id="container-footer">
+            <div id="up">
+                <span>Brasil</span>
+            </div>
+    
+            <div id="down">
+                <div id="helper">
+                    <a href="https://support.google.com/websearch/?visit_id=637534361164810979-519843702&hl=pt-BR&rd=2#topic=3378866">Ajuda</a>
+                    <a href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a>
+                    <a href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a>
+                </div>
+            </div><!-- down -->
+        </div>
+    </footer>
+</body>
+</html>
